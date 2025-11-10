@@ -33,15 +33,14 @@ Curlでインストール可能
 
 のような形でバージョンが出てくる
 
-### 使い方
 
-#### .gitignore
+### .gitignore
 
 [こちら](.gitignore)を参照
 
 GitHubのpythonデフォルトを使用
 
-#### プロジェクトの初期化
+### プロジェクトの初期化
 
 このmarimo_tester内で以下を実行する
 
@@ -57,19 +56,19 @@ GitHubのpythonデフォルトを使用
     └── README.md
     2 directories, 5 files
 
-##### プロジェクトの中身
+#### プロジェクトの中身
 
-###### main.py
+##### main.py
 
 ただのサンプルコード
 
-###### .python-version
+##### .python-version
 
 Pythonのバージョン情報が保存
 
 自分の環境では3.11が入っているからか、3.11になった(要調査)
 
-###### pyproject.toml
+##### pyproject.toml
 
 ```python
 [project]
@@ -98,15 +97,15 @@ dependencies = [
 ]
 ```
 
-#### 依存関係
+### 依存関係
 
-##### 依存関係の更新 (lock)
+#### 依存関係の更新 (lock)
 
 uvで作成した依存関係(ライブラリのバージョン)を更新するコマンド
 
     uv lock
 
-##### 依存関係の確認
+#### 依存関係の確認
 
 ライブラリのバージョンを確認
 
@@ -161,18 +160,18 @@ uvで作成した依存関係(ライブラリのバージョン)を更新する�
         └── tzdata v2025.2
     (*) Package tree already displayed
 
-#### 仮想環境構築
+### 仮想環境構築
 
-##### 仮想環境で使用するpythonのインストール
+#### 仮想環境で使用するpythonのインストール
 
     uv python install 3.10 3.11
 
-##### インストール済みのpython一覧取得
+#### インストール済みのpython一覧取得
 
     uv python list
 
 
-##### この環境で使うPythonを固定する
+#### この環境で使うPythonを固定する
 
 デフォルト3.11だった場合に3.13に変更する
 
@@ -180,3 +179,14 @@ uvで作成した依存関係(ライブラリのバージョン)を更新する�
 
 出力は以下の通り
     Updated `.python-version` from `3.11` -> `3.13`
+
+### CLIツール
+
+#### インストール
+
+    uv tool install ruff
+
+#### インストール済みtoolの一覧表示
+
+    uv tool list
+
