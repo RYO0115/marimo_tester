@@ -186,6 +186,10 @@ uvで作成した依存関係(ライブラリのバージョン)を更新する�
 
     uv tool install ruff
 
+uv tool install でインストールしたパッケージは仮想環境ではなく、local以下におかれる
+
+/Users/User/.local/share/uv/tools
+
 #### インストール済みtoolの一覧表示
 
     uv tool list
