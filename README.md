@@ -206,6 +206,11 @@ uvで作成した依存関係(ライブラリのバージョン)を更新する�
 
     uvx --with pytest pytest test_sample.py
 
+## 参考
+
+[Pythonパッケージ管理 [uv] 完全入門](https://speakerdeck.com/mickey_kubo/pythonpatukeziguan-li-uv-wan-quan-ru-men)
+
+
 
 
 
