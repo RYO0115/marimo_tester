@@ -98,5 +98,68 @@ dependencies = [
 ]
 ```
 
+#### 依存関係
+
+##### 依存関係の更新 (lock)
+
+uvで作成した依存関係(ライブラリのバージョン)を更新するコマンド
+
+    uv lock
+
+##### 依存関係の確認
+
+ライブラリのバージョンを確認
+
+    uv tree
+
+    marimo-test-project v0.1.0
+    ├── marimo v0.17.7
+    │   ├── click v8.3.0
+    │   ├── docutils v0.22.3
+    │   ├── itsdangerous v2.2.0
+    │   ├── jedi v0.19.2
+    │   │   └── parso v0.8.5
+    │   ├── loro v1.8.2
+    │   ├── markdown v3.10
+    │   ├── msgspec-m v0.19.2
+    │   ├── narwhals v2.10.2
+    │   ├── packaging v25.0
+    │   ├── psutil v7.1.3
+    │   ├── pygments v2.19.2
+    │   ├── pymdown-extensions v10.16.1
+    │   │   ├── markdown v3.10
+    │   │   └── pyyaml v6.0.3
+    │   ├── pyyaml v6.0.3
+    │   ├── starlette v0.50.0
+    │   │   ├── anyio v4.11.0
+    │   │   │   ├── idna v3.11
+    │   │   │   ├── sniffio v1.3.1
+    │   │   │   └── typing-extensions v4.15.0
+    │   │   └── typing-extensions v4.15.0
+    │   ├── tomlkit v0.13.3
+    │   ├── uvicorn v0.38.0
+    │   │   ├── click v8.3.0
+    │   │   └── h11 v0.16.0
+    │   └── websockets v15.0.1
+    ├── matplotlib v3.10.7
+    │   ├── contourpy v1.3.3
+    │   │   └── numpy v2.3.4
+    │   ├── cycler v0.12.1
+    │   ├── fonttools v4.60.1
+    │   ├── kiwisolver v1.4.9
+    │   ├── numpy v2.3.4
+    │   ├── packaging v25.0
+    │   ├── pillow v12.0.0
+    │   ├── pyparsing v3.2.5
+    │   └── python-dateutil v2.9.0.post0
+    │       └── six v1.17.0
+    ├── numpy v2.3.4
+    └── pandas v2.3.3
+        ├── numpy v2.3.4
+        ├── python-dateutil v2.9.0.post0 (*)
+        ├── pytz v2025.2
+        └── tzdata v2025.2
+    (*) Package tree already displayed
+
 #### 仮想環境構築
 
